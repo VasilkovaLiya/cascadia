@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    
+    <title>Document</title>
+    <script src = "js/jquery-3.2.1.min.js"></script> 
+    <script type="text/javascript" src="js/js.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    <script src="js/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+    <div class="menu__container">
+                <div class="menu__header container-el">
+                    <div class="menu__title">Меню</div>
+                    <div class="lng__switch"><a href="#" class="lng lng_active">ru</a><a href="" class="lng">en</a></div>
+                </div>
+                <nav class="menu__nav ">   
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">О компании</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Услуги</a>
+                            <ul class="submenu__list">
+                                <li class="submenu__item"><a href="" class="submenu__link">Интермодальные перевозки</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Морские перевозки</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Сбрные грузы</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Проектные грузы</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Авиа-перевозки</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакты</a>
+                        </li>    
+                     </ul>
+                </nav>
+                <a class="tel tel--menu" href="tel:+7800300000">8 800 300 000</a> 
+                <div class="callback"><a href="#" data-fancybox data-src="#selectableModal" href="javascript:;" class="btn btn-primary callback__link callback__link--menu" >Заказать обратный звонок</a></div> 
+                <div class="close"></div>               
+    </div>
+    
+    <div class="main-container">
+    <section class="section-wrapper">
+        <div class="first-section">
+            <header class="header">
+                <div class="menu__icon"></div>   
+             
+                <div class="logo">
+                    <a href="#"><img src="img/logo-img.png" alt="Логотип" class="logo__img"></a>
+                </div>
+                <div class="header__right-container">
+                    <a class="tel" href="tel:+7800300000">8 800 300 000</a> 
+                    <a href="#" data-fancybox data-src="#selectableModal" href="javascript:;" class="btn btn-primary " ><img src="img/phone-ban-icon.png" alt="" class="tel__icon"></a>
+                    <div class="callback"><a href="#" data-fancybox data-src="#selectableModal" href="javascript:;" class="btn btn-primary callback__link" >Обратный звонок</a></div>
+                    <div style="display: none;max-width:500px;" id="selectableModal">
+                         
+                        <form action="" id="file_form1" class="form form--modal" method=''>
+                                
+                                <label class="form__block">
+                                    <input type="text" class="form__input" name="name" id='name1' placeholder="Ваше имя" required>
+                                </label>
+                                <label class="form__block">
+                                        <input type="text" class="form-control form__input" name="tel" id='tel' placeholder="Номер телефона" required>
+                                </label>
+                                <label class="form__block">
+                                        <!-- <input type="text" class="form__input" name="email" id='email' placeholder="E-mail"> -->
+                                        <input type="email" class="form__input" name="email" required pattern="^\S+@\S+\.\S+$" title="E-mail" placeholder="E-mail">
+                                </label>
+                                <label class='form__checkbox'>
+                                        <input type="checkbox" name="agreement" class="checkbox__input" value="+" >
+                                        <span class="checkbox__custom"></span>
+                                        <span class="checkbox__text">Я прочитал(а) <a href="" class="privacy">политику конфиденциальности </a> и соглашаюсь с ее положениями.</span>
+                                </label>
+                                <input type="submit" class="order" value="Заказать звонок" disabled>	
+                        </form>    
+                    </div>
+
+                    <div class="lng__switch">
+                        <a href="#" class="lng lng_active">ru</a><a href="#" class="lng">en</a> 
+                    </div>       
+                </div>
+            </header>
+            <div class="banner">
+                <div class="banner__text">
+                    <div class="banner__item--big">Доставка грузов <span>от 50 кг</span> из Китая в Росиию</div>
+                    <div class="banner__item--small">Сократите ваши расходы на 5% и более вместе с нами.
+                        Работаем с юридическими лицами.</div>
+                </div>
+                
+                <form action="" id="file_form2" class="form " method=''>
+                        
+                        <label class="form__block">
+                            <input type="text" class="form__input" name="name" id='name2' placeholder="Ваше имя" required>
+                        </label>
+                        <label class="form__block">
+                                <input type="text" class="form-control form__input" name="phone" id='phone' placeholder="Номер телефона" required>
+                        </label>
+                        <label class="form__block">
+                                <input type="email" class="form__input" name="email" required pattern="^\S+@\S+\.\S+$" title="E-mail" placeholder="E-mail">
+                        </label>
+                        <label class='form__checkbox'>
+                                <input type="checkbox" name="agreement" class="checkbox__input" value="+" >
+                                <span class="checkbox__custom"></span>
+                                <span class="checkbox__text">Я прочитал(а) <a href="" class="privacy">политику конфиденциальности </a> и соглашаюсь с ее положениями.</span>
+                        </label>
+                        <input type="submit" class="order" value="Бесплатная консультация" disabled>	
+                </form>    
+            </div>  
+        </div>
+    </section>  
+    <section class="section-wrapper section-wrapper--grey">
+        <div class="servise-section section">
+            <h2 class="section__title">
+                Логистические услуги
+            </h2>
+            <p class="section__text">
+                    Наша компания оказывает широкий спект услуг, что бы обеспечить вам максимальное удобство по транспортировке товара.
+            </p>
+            <ul class="section_list">
+                <li class="section__item section__item--brdr">
+                    <a href="" class="section__item-link section__item-link--horizont">    
+                        <img src="img/srvs-img1.png" alt="" class="section__item-img">
+                        <div class="section__item-title">Авиа-перевозки</div>
+                    </a>      
+                </li>
+                <li class="section__item section__item--brdr">
+                    <a href="" class="section__item-link section__item-link--horizont">
+                        <img src="img/srvs-img2.png" alt="" class="section__item-img">
+                        <div class="section__item-title">Перевозка проектных грузов</div>
+                    </a>
+                </li>                   
+                <li class="section__item section__item--brdr">
+                    <a href="" class="section__item-link section__item-link--horizont"> 
+                        <img src="img/srvs-img3.png" alt="" class="section__item-img">
+                        <div class="section__item-title">Интермодальные перевозки</div>
+                    </a>    
+                </li>
+                <li class="section__item section__item--brdr">
+                    <a href="" class="section__item-link section__item-link--horizont">     
+                        <img src="img/srvs-img1.png" alt="" class="section__item-img">
+                        <div class="section__item-title">Перевозка сборных грузов</div>
+                    </a>    
+                </li>
+                <li class="section__item section__item--brdr">
+                    <a href="" class="section__item-link section__item-link--horizont">
+                        <img src="img/srvs-img1.png" alt="" class="section__item-img">
+                        <div class="section__item-title">Морские перевозки</div>
+                    </a> 
+                </li>                       
+                <li class="section__item section__item--brdr">
+                    <a href="" class="section__item-link section__item-link--horizont"> 
+                        <img src="img/srvs-img1.png" alt="" class="section__item-img">
+                        <div class="section__item-title">Таможенное оформление</div>
+                    </a>
+                </li>
+            </ul>
+        </div>    
+    </section>   
+    <section class="section-wrapper">
+        <div class="benefit-section section">
+            <h2 class="section__title">
+                Преимущества работы с нами
+            </h2>
+            <p class="section__text">
+                    Наша компания оказывает широкий спект услуг, что бы обеспечить вам максимальное удобство по транспортировки товара</p>
+            <ul class="section_list">
+                <li class="section__item">
+                    <a href="" class="section__item-link">
+                        <img src="img/ben-icon.png" alt="" class="section__item-img--left">
+                        <div class="section__item-title">Надежность</div>
+                        <div class="section__item-text">Перевозим грузы 20 лет. Доставили грузы клиентам более чем на 1 млрд.$</div>
+                    </a>     
+                </li>
+                <li class="section__item">
+                    <a href="" class="section__item-link">
+                        <img src="img/ben-icon2.png" alt="" class="section__item-img--left">
+                        <div class="section__item-title">Скорость</div>
+                        <div class="section__item-text">Доставляем со скоростью самолета по цене поезда. Нет ограничений по объему и весу груза</div>
+                    </a>     
+                </li>
+                <li class="section__item">
+                    <a href="" class="section__item-link">
+                        <img src="img/phone-icon.png" alt="" class="section__item-img--left">
+                        <div class="section__item-title">Удобство</div>
+                        <div class="section__item-text">Бесплатные консультации с экспертом ВЭД. Оплата после получения груза.</div>
+                    </a>    
+                </li>            
+            </ul>
+        </div>    
+    </section>
+    <section class="section-wrapper section-wrapper--grey">
+        <div class="form-section section">
+            <div class="section__title-wrapper">
+                <h2 class="section__title">Остались вопросы?</h2>
+                <div class="msg"><img src="img/msg-icon.png" alt="Рис." ></div> 
+            </div>    
+                <form action="" id="file_form3" class="form form--mod" method=''>
+                    
+                    <label class="form__block">
+                        <input type="text" class="form__input" name="name" id='name3' placeholder="Ваше имя" required>
+                    </label>
+                    <label class="form__block">
+                            <input type="text" class="form__input form-control" name="tel" id='tel2' placeholder="Номер телефона" required>
+                    </label>
+                    <label class="form__block">
+                            <!-- <input type="text" class="form__input" name="email" id='email' placeholder="E-mail"> -->
+                            <input type="email" class="form__input" name="email" required pattern="^\S+@\S+\.\S+$" title="E-mail" placeholder="E-mail">
+                    </label>
+                    <div class="vert-wrapper">
+                        <textarea placeholder="Задать вопрос" class="form__textarea form__textarea--big" name="comment" > </textarea>
+                        <div class="horizont-wrapper">
+                            <label class='form__checkbox'>
+                                    <input type="checkbox" name="agreement" class="checkbox__input" value="+" >
+                                    <span class="checkbox__custom"></span>
+                                    <span class="checkbox__text">Я прочитал(а) <a href="" class="privacy">политику конфиденциальности </a> и соглашаюсь с ее положениями.</span>
+                            </label>
+                            
+                            <input type="submit" class="order" value="Задать вопрос" disabled>	
+                        </div>
+                    </div>            
+                </form>
+        </div>
+    </section>
+    <section class="section-wrapper">
+            <div class="contacts-section section">
+                <h2 class="section__title section__title--center">
+                    Контакты
+                </h2>
+                <ul class="section_list section_list--transp" >
+                    <li class="section__item section__item--contacts">
+                        <div class="city">
+                                <div class="section__item-title">Владивосток</div>
+                                <div class="section__item-text"><img class="contacts-icon" alt="" src="img/tel-icon.png"><a href="tel:+74232791401">+7(423)279-14-01</a></div>
+                                <div class="section__item-text"><img class="contacts-icon" alt="" src="img/tel-icon.png"><a href="tel:+74232791401">+7(423)279-14-08</a></div>
+                                <div class="section__item-text"><img class="contacts-icon" alt="" src="img/tel-icon.png"><a href="tel:+74232791401">+7(423)279-14-02</a></div>
+                               
+                        </div>
+                        <div class="direction">
+                                <div class="section__item-title section__item-title--direction">Импорт:</div>
+                                <div class="section__item-text"><img class="contacts-icon" alt="" src="img/mail-icon.png"><a href="mailto:import@casdil.ru">import@casdil.ru</a></div>
+                        </div>
+                    </li>
+                    <li class="section__item section__item--center section__item--contacts">
+                        <div class="city">
+                                <div class="section__item-title">Москва</div>
+                                <div class="section__item-text"><img class="contacts-icon" alt="" src="img/tel-icon.png"><a href="tel:+74232791401">+7(423)279-14-02</a></div>
+                                <div class="section__item-text"><img class="contacts-icon" alt="" src="img/tel-icon.png"><a href="tel:+74232791401">+7(423)279-14-02</a></div>
+                                <div class="section__item-text"><img class="contacts-icon" alt="" src="img/tel-icon.png"><a href="tel:+74232791401">+7(423)279-14-02</a></div>
+                        </div>
+                        <div class="direction">
+                                <div class="section__item-title section__item-title--direction">Экспорт:</div>
+                                <div class="section__item-text"><img class="contacts-icon" alt="" src="img/mail-icon.png"><a href="mailto:import@casdil.ru">export@casdil.ru</a></div>
+                        </div>
+                    </li>
+                    <li class="section__item section__item section__item--contacts">
+                            <div class="city">
+                                    <div class="section__item-title">Восточный порт (п Врангель)</div>
+                                    <div class="section__item-text"><img class="contacts-icon" alt="" src="img/tel-icon.png"><a href="tel:+74232791401">+7(423)279-14-02</a></div>
+                                    <div class="section__item-text"><img class="contacts-icon" alt="" src="img/tel-icon.png"><a href="tel:+74232791401">+7(423)279-14-02</a></div>
+                                    <div class="section__item-text"><img class="contacts-icon" alt="" src="img/tel-icon.png"><a href="tel:+74232791401">+7(423)279-14-02</a></div>
+                            </div>
+                            <div class="direction">
+                                    <div class="section__item-title section__item-title--direction">Внутри-Российские перевозки:</div>
+                                    <div class="section__item-text"><img class="contacts-icon" alt="" src="img/mail-icon.png"><a href="mailto:import@casdil.ru">rail@casdil.ru</a></div>
+                            </div>
+                    </li>
+                              
+                </ul>
+            </div>    
+    </section>   
+            <div class="map__section">
+                <div id="map"></div>
+            </div>    
+    
+
+    <footer>
+            
+        <div class="footer__section section">
+            <ul class="footer__list">
+                <li class="footer__item">© 2012-2017, Cascadia Lines</li>
+                <li class="footer__item">Телефон: <a href="tel:+7800300000">8 800 300 000</a></li>
+                <li class="footer__item">Пользовательское соглашение</li>
+            </ul>
+        </div>    
+    </footer>
+</div>    
+    <script type="text/javascript">
+        // Функция ymaps.ready() будет вызвана, когда
+        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+        ymaps.ready(init);
+        function init(){ 
+            // Создание карты.    
+            var myMap = new ymaps.Map("map", {
+                center: [43.11494624235602,131.90196093306758],
+                zoom: 14,
+                controls: [],
+            });
+            myMap.behaviors.disable('scrollZoom'); 
+
+            
+            var myPlacemark = new ymaps.Placemark([43.11494624235602,131.90196093306758], {}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/geo.png',
+                iconImageSize: [25, 46],
+                iconImageOffset: [-20, -15],
+                balloonContentHeader: "Балун метки",
+            balloonContentBody: "Содержимое <em>балуна</em> метки",
+            balloonContentFooter: "Подвал",
+            hintContent: "Хинт метки"
+                
+            });
+
+                        // После того как метка была создана, ее
+                        // можно добавить на карту.
+            myMap.geoObjects.add(myPlacemark);
+
+            myMap.balloon.open([43.11494624235602,131.90196093306758], "<b>Головной офис порт Владивосток</b> <br> г. Владивосток, ул. Светланская 78Б", {
+        // Опция: не показываем кнопку закрытия.
+        closeButton: false
+    });
+
+            }
+
+
+
+            
+    </script>       
+</body>
+</html>

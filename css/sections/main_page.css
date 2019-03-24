@@ -1,0 +1,66 @@
+.first__section {
+  width: 100%;
+  background: url(../img/banner.png);
+  height: 755px; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1280px;
+  margin: 30px auto 0px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.menu__icon {
+  border-top: 3px black solid;
+  border-bottom: 3px black solid;
+  width: 25px;
+  height: 5px;
+  cursor: pointer;
+  position: relative; }
+
+.menu__container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  max-width: 320px;
+  background-color: #f9f9fb; }
+
+.menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.menu__icon:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 300%;
+  left: 0px;
+  width: 50%;
+  border-top: 3px black solid;
+  margin-top: -1px; }
+
+.tel {
+  font-family: 'Rubik Medium';
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px; }

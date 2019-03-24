@@ -1,0 +1,30 @@
+.fancybox-bg {
+    background: #252323;
+}
+.fancybox-close-small {
+    color: #000;
+    width: 66px;
+}
+
+.form--modal {
+    width: 495px;
+    height: 520px;
+    margin: 15px auto; 
+}
+.fancybox-content {
+    padding: 0;
+    overflow: hidden;
+}
+.form__title {
+    font-family: $RM;
+    font-size: 32px;
+    font-weight: 500;
+}
+input:focus:invalid {
+	border:2px solid red;
+}
+input:focus:valid,
+textarea:focus:valid{
+ border:solid 2px rgb(125, 185, 196);
+ background-color:#fff;
+}

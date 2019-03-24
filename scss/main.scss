@@ -1,0 +1,18 @@
+//config
+
+//resolutions
+$tablet:768px;
+$phone:480px;
+
+// settings - базовые настройки
+@import "settings/media.scss";
+@import "settings/base.scss";
+@import "settings/fonts.scss";
+
+
+
+//sections -настройки секций
+@import "sections/main_page.scss";
+
+//свойсвта модальных окон, проверка формы
+@import "settings/extra.scss";
